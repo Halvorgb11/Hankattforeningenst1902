@@ -288,6 +288,21 @@ h2.headline {
   box-shadow: 0 0 0 4px var(--ink), 0 0 0 5px var(--gold);
 }
 
+.text-frame {
+  background: var(--paper);
+  color: var(--ink);
+  padding: 2rem 2.5rem;
+  border: 1px solid var(--gold);
+  box-shadow: 0 0 0 4px var(--ink), 0 0 0 5px var(--gold);
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.text-frame h1,
+.text-frame .hero-note {
+  color: var(--ink);
+}
+
 .hirsch-portrait {
   aspect-ratio: 3 / 4;
   background: linear-gradient(180deg, #4a4032 0%, #2d2720 100%);
