@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hero-alternativer (forhåndsvisning) – Hankattforeningen</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&family=IM+Fell+English:ital@0;1&family=IM+Fell+English+SC&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    /* Kun for denne forhåndsvisningssiden — påvirker ikke resten av nettstedet */
+    .preview-label {
+      background: var(--ink);
+      color: var(--paper);
+      font-family: 'IM Fell English SC', serif;
+      letter-spacing: 0.2em;
+      font-size: 0.85rem;
+      text-align: center;
+      padding: 0.9rem 1rem;
+    }
+    .preview-label strong { color: var(--gold); }
+    .hero.preview-hero { min-height: 60vh; }
+
+    /* Alt 1: Ett hero-emblem */
+    .v1-emblem { width: 280px; height: 280px; margin-bottom: 1.5rem; }
+    .v1-motto { font-style: italic; font-size: 1.1rem; max-width: 520px; opacity: 0.9; }
+
+    /* Alt 2: Triptyk som våpenskjold */
+    .triptych { display: flex; flex-direction: column; align-items: center; margin-bottom: 2rem; }
+    .triptych-top { width: 190px; height: 190px; margin-bottom: -1.75rem; z-index: 3; }
+    .triptych-row { display: flex; gap: 3.5rem; }
+    .triptych-side { width: 100px; height: 100px; }
+
+    /* Alt 3: Motto som hovedelement */
+    .v3-motto {
+      font-family: 'UnifrakturMaguntia', serif;
+      font-size: clamp(2rem, 5vw, 3.3rem);
+      line-height: 1.2;
+      max-width: 760px;
+      margin-bottom: 2rem;
+    }
+    .v3-seal { width: 90px; height: 90px; margin-bottom: 1rem; }
+
+    /* Alt 4: Sirkusplakat */
+    .circus-ornament { color: var(--gold); letter-spacing: 0.6em; font-size: 1.1rem; margin: 1rem 0; }
+    .circus-frame {
+      width: 220px; height: 220px; border-radius: 50%;
+      background: var(--paper);
+      border: 3px solid var(--ink);
+      outline: 3px dashed var(--gold);
+      outline-offset: 7px;
+      display: flex; align-items: center; justify-content: center;
+      overflow: hidden;
+      margin: 0.5rem 0 2rem;
+    }
+    .circus-frame img { width: 100%; height: 100%; object-fit: contain; }
+    .circus-banner {
+      background: var(--red);
+      color: var(--paper);
+      font-family: 'UnifrakturMaguntia', serif;
+      font-size: clamp(1.8rem, 4vw, 2.8rem);
+      padding: 0.7rem 3.5rem;
+      clip-path: polygon(0 0, 100% 0, 92% 50%, 100% 100%, 0 100%, 8% 50%);
+      margin-bottom: 1rem;
+    }
+
+    /* Alt 5: Emblem øverst, to som footer-segl */
+    .v5-seals { display: flex; gap: 2.5rem; margin-top: 2.5rem; }
+    .v5-seal { width: 70px; height: 70px; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="top-ribbon">FORHÅNDSVISNING AV HERO-ALTERNATIVER — IKKE DEN LIVE FORSIDEN</div>
+    <nav class="archaic" aria-label="Hovednavigasjon">
+      <a href="index.html">Tilbake til forsiden</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <div class="preview-label">Dagens design (index.html nå) — <strong>uendret, som referanse</strong></div>
+    <section class="hero stripes preview-hero">
+      <div class="hero-logo-row">
+        <div class="hero-logo-item">
+          <img src="images/Hirsch-logo.jpeg" alt="Hirsch logo">
+        </div>
+        <div class="hero-logo-item center">
+          <img src="images/Tiger-logo-bedre.png" alt="Tiger logo bedre">
+        </div>
+        <div class="hero-logo-item">
+          <img class="zoom-fit" src="images/Katteræva-logo.png" alt="Hankattræva logo">
+        </div>
+      </div>
+      <h1>Hankattforeningen</h1>
+      <div class="hero-est">stiftet 1902</div>
+      <div class="hero-motto">Haandens tugt over kulturen til foryngende frugt</div>
+      <div class="hero-attrib">— Salig Johan Leuthäuser Hirsch</div>
+    </section>
+
+    <div class="preview-label">Alternativ 1 — <strong>Ett hero-emblem</strong></div>
+    <section class="hero stripes preview-hero">
+      <div class="hero-logo-item center v1-emblem">
+        <img src="images/Tiger-logo-bedre.png" alt="Tiger logo — Hankattforeningen stiftet 1902">
+      </div>
+      <div class="hero-motto v1-motto">Haandens tugt over kulturen til foryngende frugt</div>
+    </section>
+
+    <div class="preview-label">Alternativ 2 — <strong>Triptyk som våpenskjold</strong></div>
+    <section class="hero stripes preview-hero">
+      <div class="triptych">
+        <div class="hero-logo-item center triptych-top">
+          <img src="images/Tiger-logo-bedre.png" alt="Tiger logo">
+        </div>
+        <div class="triptych-row">
+          <div class="hero-logo-item triptych-side">
+            <img src="images/Hirsch-logo.jpeg" alt="Hirsch logo">
+          </div>
+          <div class="hero-logo-item triptych-side">
+            <img class="zoom-fit" src="images/Katteræva-logo.png" alt="Hankattræva logo">
+          </div>
+        </div>
+      </div>
+      <h1>Hankattforeningen</h1>
+      <div class="hero-est">stiftet 1902</div>
+    </section>
+
+    <div class="preview-label">Alternativ 3 — <strong>Motto som hovedelement</strong></div>
+    <section class="hero stripes preview-hero">
+      <div class="v3-motto">Haandens tugt over kulturen<br>til foryngende frugt</div>
+      <div class="hero-logo-item v3-seal">
+        <img src="images/Tiger-logo-bedre.png" alt="Tiger logo">
+      </div>
+      <div class="hero-attrib">Hankattforeningen · stiftet 1902</div>
+    </section>
+
+    <div class="preview-label">Alternativ 4 — <strong>Sirkusplakat</strong></div>
+    <section class="hero stripes preview-hero">
+      <div class="circus-ornament">✦ ❧ ✦ ❧ ✦</div>
+      <div class="circus-frame">
+        <img src="images/Tiger-logo-bedre.png" alt="Tiger logo">
+      </div>
+      <div class="circus-banner">Hankattforeningen</div>
+      <div class="hero-est">stiftet 1902</div>
+      <div class="circus-ornament">✦ ❧ ✦ ❧ ✦</div>
+    </section>
+
+    <div class="preview-label">Alternativ 5 — <strong>Emblem øverst, to som footer-segl</strong></div>
+    <section class="hero stripes preview-hero">
+      <div class="hero-logo-item center">
+        <img src="images/Tiger-logo-bedre.png" alt="Tiger logo">
+      </div>
+      <h1>Hankattforeningen</h1>
+      <div class="hero-est">stiftet 1902</div>
+      <div class="hero-motto">Haandens tugt over kulturen til foryngende frugt</div>
+      <div class="v5-seals">
+        <div class="hero-logo-item v5-seal">
+          <img src="images/Hirsch-logo.jpeg" alt="Hirsch logo">
+        </div>
+        <div class="hero-logo-item v5-seal">
+          <img class="zoom-fit" src="images/Katteræva-logo.png" alt="Hankattræva logo">
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    Hankattforeningen stiftet 1902 · Pentagonveien 1, 1430 Ås
+    <div class="stamp">Forhåndsvisning — ikke lenket fra menyen</div>
+  </footer>
+</body>
+</html>
