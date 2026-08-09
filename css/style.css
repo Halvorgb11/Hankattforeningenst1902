@@ -628,6 +628,27 @@ h2.headline {
   color: var(--paper);
 }
 
+.trinity-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.trinity-link {
+  color: var(--gold);
+  font-family: 'IM Fell English SC', serif;
+  letter-spacing: 0.1em;
+  font-size: 0.85rem;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.2s;
+}
+
+.trinity-link:hover {
+  border-bottom-color: var(--gold);
+}
+
 .archive {
   background: var(--paper);
 }
