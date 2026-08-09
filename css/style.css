@@ -168,6 +168,11 @@ nav.archaic a:hover {
     display: block;
   }
 
+  .hero-logo-item img.zoom-fit {
+    object-fit: cover;
+    transform: scale(1.6);
+  }
+
 .hero-est {
   font-family: 'IM Fell English SC', serif;
   font-size: 1.3rem;
