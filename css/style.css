@@ -173,6 +173,44 @@ nav.archaic a:hover {
     transform: scale(2.1);
   }
 
+.circus-ornament {
+  color: var(--gold);
+  letter-spacing: 0.6em;
+  font-size: 1.1rem;
+  margin: 1rem 0;
+}
+
+.circus-frame {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  background: var(--paper);
+  border: 3px solid var(--ink);
+  outline: 3px dashed var(--gold);
+  outline-offset: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  margin: 0.5rem 0 2rem;
+}
+
+.circus-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.circus-banner {
+  background: var(--ink);
+  color: var(--paper);
+  font-family: 'UnifrakturMaguntia', serif;
+  font-size: clamp(1.8rem, 4vw, 2.8rem);
+  padding: 0.7rem 3.5rem;
+  clip-path: polygon(0 0, 100% 0, 92% 50%, 100% 100%, 0 100%, 8% 50%);
+  margin-bottom: 1rem;
+}
+
 .hero-est {
   font-family: 'IM Fell English SC', serif;
   font-size: 1.3rem;
