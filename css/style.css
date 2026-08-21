@@ -211,6 +211,16 @@ nav.archaic a:hover {
   margin-bottom: 1rem;
 }
 
+.page-hero-title {
+  background: var(--paper);
+  color: var(--ink);
+  display: inline-block;
+  padding: 0.75rem 2.5rem;
+  border: 1px solid var(--ink);
+  box-shadow: 0 0 0 4px var(--paper);
+  margin-bottom: 1.5rem;
+}
+
 .hero-est {
   font-family: 'IM Fell English SC', serif;
   font-size: 1.3rem;
