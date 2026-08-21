@@ -7,7 +7,7 @@ Dette er et statisk nettsted for Hankattforeningen st.1902, en lukket studentfor
 - **Tone**: Ironisk-elevated, arkaisk, mørk og "dreamcult-aktig"
 - **Fargepalett**: Rød (#A41818), papir (#F2E9D0), blekk (#0F0E0C), gull (#A88A2E)
 - **Typografi**: UnifrakturMaguntia, IM Fell English, IM Fell English SC, Cormorant Garamond, Special Elite
-- **Arkaisk staveform**: Kultur med stor K, Qulturelle med Q, «aar» osv. – dette er bevisst, ikke skrivefeil
+- **Arkaisk staveform**: Kultur med stor K, «aar» osv. – dette er bevisst, ikke skrivefeil
 - **Layout**: Stripemønster, mørke og lyse seksjoner, responsiv design
 
 ## Filstruktur
@@ -15,7 +15,7 @@ Dette er et statisk nettsted for Hankattforeningen st.1902, en lukket studentfor
 - `hankatter.html` – Medlemsoversikt gruppert i hierarki
 - `hierarki.html` – Det opplyste enevelde
 - `nach-pa-loftet.html` – Nach på loftet?
-- `treenighet.html` – Den Qulturelle Treenighet
+- `treenighet.html` – Den Kulturelle Treenighet
 - `kontakt.html` – Adresse, e-post, om å bli Aspirant
 - `css/style.css` – Felles styling
 - `images/` – Bilder (logo: Tigeren-logo.png)

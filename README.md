@@ -20,7 +20,7 @@ Deretter kan du åpne `http://localhost:8000`.
 - `hankatter.html` – medlemsoversikt
 - `hierarki.html` – struktur og hierarki
 - `nach-pa-loftet.html` – nach på loftet
-- `treenighet.html` – Den Qulturelle Treenighet
+- `treenighet.html` – Den Kulturelle Treenighet
 - `kontakt.html` – kontaktinformasjon
 - `css/style.css` – felles styling
 - `images/` – bildeplassering for senere innhold
