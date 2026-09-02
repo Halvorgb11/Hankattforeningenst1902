@@ -479,6 +479,10 @@ h2.headline {
     display: block;
   }
 
+  .member-portrait img.face-top {
+    object-position: center 20%;
+  }
+
 .member-name {
   font-style: italic;
   font-size: 1.05rem;
