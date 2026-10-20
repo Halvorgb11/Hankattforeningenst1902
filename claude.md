@@ -22,30 +22,32 @@ Dette er et statisk nettsted for Hankattforeningen st.1902, en lukket studentfor
 - `README.md` – Instruksjoner for kjøring/deploy
 
 ## Hierarki og Titler
+(Slik det står på hankatter.html)
 ### Administrerende Direktør
-- [Navn]
+- Administrerende Direktør: Halfdan H. Setvik
 
 ### Høyere Embetsmenn
-- Justitiarius: [Navn]
-- Generalsekretær: [Navn]
-- Chef d'Hazard: [Navn]
+- Justitiarius: Peder Flaat
+- Chef d'Hazard: Markus Rasch
+
+### Embetsmenn
+- Qulturattaché: Halvor G. Bolkesjø
 
 ### Lavere Embetsmenn
-- Finansrådmann: Halvor Grefsrød Bolkesjø
-- Osteopat: [Navn] Rasch
-- Tippesjef: [Navn]
-- Maestro de Poletto: [Navn] Engh
+- Osteopat: Trygve B. Refsnes
+- Maestre de Paletto: Herman Engh
+- Kapellmester: Jørg W. Haaland
+- Teknisk Disponent: Daniel Arno Olsen
 
 ### Aspiranter
-- Bartender: [Navn]
-- Materialforvalter: [Navn]
-- Lys & Cloac: [Navn]
-- Kjøletekniker: [Navn]
-- Flaggelat: [Navn] Gjerstad
+- Hovedkasserer: Andreas Slåttholm
+- Bartender: Finhas W. Gaim
+- Flaggelat: Sondre Aasenhuus
+- Lys & Cloac: Leander Nærum
+- Materialforvalter: Albert Bøttinger
 
 ### Aspirerende Aspiranter
-- AspAsp 1: [Navn]
-- AspAsp 2: [Navn]
+- Ikke vist på hankatter.html foreløpig
 
 ## Oppgaver for Videre Utvikling
 1. **Bilder**: Erstatt [Portrett] og [Foto] placeholders med faktiske bilder i `images/`
@@ -72,5 +74,5 @@ Dette er et statisk nettsted for Hankattforeningen st.1902, en lukket studentfor
 
 ## Notater
 - Bevar den arkaiske tonen i all tekst
-- Hierarkiet er strengt: AD > Høyere Embetsmenn > Lavere Embetsmenn > Aspiranter > Aspirerende Aspiranter
-- Foreningen har 12 medlemmer totalt (AD + 3 høyere + 4 lavere + 5 aspiranter), pluss aspirerende aspiranter
+- Hierarkiet er strengt: AD > Høyere Embetsmenn > Embetsmenn > Lavere Embetsmenn > Aspiranter > Aspirerende Aspiranter
+- Foreningen har 13 medlemmer totalt (AD + 2 høyere + 1 embetsmann + 4 lavere + 5 aspiranter), pluss aspirerende aspiranter
