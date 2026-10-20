@@ -4,10 +4,11 @@
 Dette er et statisk nettsted for Hankattforeningen st.1902, en lukket studentforening på NMBU. Nettstedet er bygget i ren HTML/CSS uten rammeverk eller byggverktøy, og skal deployes som statiske filer til Netlify eller Cloudflare Pages.
 
 ## Visuell Stil og Tone
-- **Tone**: Ironisk-elevated, arkaisk, mørk og "dreamcult-aktig"
+- **Tone**: Ironisk, høytidelig, mørk og "dreamcult-aktig", skrevet på korrekt bokmål som gjerne kan være gammeldags
 - **Fargepalett**: Rød (#A41818), papir (#F2E9D0), blekk (#0F0E0C), gull (#A88A2E)
 - **Typografi**: UnifrakturMaguntia, IM Fell English, IM Fell English SC, Cormorant Garamond, Special Elite
-- **Arkaisk staveform**: Kultur med stor K – dette er bevisst, ikke skrivefeil
+- **Språk**: Bruk korrekt bokmål, gjerne med gammeldags ordvalg og høytidelige formuleringer. Unngå rene riksmåls- og danske former. Skriv alltid «etter», aldri «efter».
+- **Foreningens skrivemåte**: Kultur med stor K – dette er bevisst, ikke skrivefeil
 - **Layout**: Stripemønster, mørke og lyse seksjoner, responsiv design
 
 ## Filstruktur
@@ -73,6 +74,6 @@ Dette er et statisk nettsted for Hankattforeningen st.1902, en lukket studentfor
 - Deploy via Netlify/Cloudflare Pages
 
 ## Notater
-- Bevar den arkaiske tonen i all tekst
+- Bevar den høytidelige, gjerne gammeldagse tonen innenfor korrekt bokmål
 - Hierarkiet er strengt: AD > Høyere Embetsmenn > Embetsmenn > Lavere Embetsmenn > Aspiranter > Aspirerende Aspiranter
 - Foreningen har 13 medlemmer totalt (AD + 2 høyere + 1 embetsmann + 4 lavere + 5 aspiranter), pluss aspirerende aspiranter

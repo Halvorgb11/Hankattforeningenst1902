@@ -45,10 +45,9 @@ Arkivet er også supplert med «Tilbake til Cirkus» (123. Kulturelle år) og
 Sistnevnte ble fremført i februar 2018, som ligger mellom 1. mai 2017 og
 30. april 2018 og dermed tilhører det 115. Kulturelle år.
 
-For å legge til en revy, kopier en `article.revue-entry` til riktig periode,
-med nyeste revy først. Oppdater året, tittelen, `id`, `aria-labelledby` og
-direktelenken. Opprett en ny periodeseksjon og en lenke øverst hvis nødvendig.
-Oppdater også oversiktens totalantall, årsintervall og periodens antall revyer.
+For å legge til en revy, kopier en `article.revue-entry` til riktig plass i
+`div.revue-grid`, med nyeste revy først. Oppdater året, tittelen, `id`,
+`aria-labelledby` og direktelenken. Alle revyene vises i én samlet oversikt.
 
 Bilde, kommentar og presseomtale er valgfrie. En oppføring kan for eksempel være:
 
@@ -65,13 +64,14 @@ Bilde, kommentar og presseomtale er valgfrie. En oppføring kan for eksempel væ
   </div>
   <h3 id="revy-tittel-124">Revytittel</h3>
   <p class="revue-comment">Kommentar eller minner fra forestillingen.</p>
-  <details class="revue-press">
-    <summary>Presseomtale</summary>
+  <div class="revue-press">
+    <h4>Presseomtale</h4>
     <blockquote><p>Omtale, med avisnavn og dato når dette er kjent.</p></blockquote>
-  </details>
+  </div>
 </article>
 ```
 
 Presseomtalen kan også inneholde lenker til avisartikler eller innskannede utklipp.
-Utelat `details` hvis ingen presseomtale finnes. Det er ikke nødvendig med et
+Utelat `div.revue-press` hvis ingen presseomtale finnes. Omtalene vises direkte.
+Det er ikke nødvendig med et
 plassholderbilde for revyer uten bilder.

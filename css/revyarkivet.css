@@ -16,106 +16,15 @@ nav.archaic a[aria-current="page"] {
   overflow-wrap: anywhere;
 }
 
-.revue-intro {
-  padding: 4rem 2rem;
-  border-top: 1px solid var(--ink);
-}
-
-.revue-intro-grid {
-  display: grid;
-  grid-template-columns: 1fr 1.3fr;
-  gap: 3rem;
-}
-
-.revue-eyebrow {
-  font-family: 'IM Fell English SC', serif;
-  color: var(--red-deep);
-  letter-spacing: 0.12em;
-  font-size: 0.85rem;
-  margin-bottom: 0.75rem;
-}
-
-.revue-intro h2,
-.revue-contribute h2 {
-  font-weight: normal;
-  font-size: clamp(1.8rem, 4vw, 2.5rem);
-  line-height: 1.25;
-}
-
-.revue-intro p + p {
-  margin-top: 1rem;
-}
-
 .revue-collection {
   padding: 3rem 2rem 4rem;
 }
 
-.revue-directory,
-.revue-period-heading,
-.revue-entry-heading {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 1rem;
-}
-
-.revue-directory {
-  padding-bottom: 2rem;
-  border-bottom: 1px solid var(--gold);
-  flex-wrap: wrap;
-}
-
-.revue-directory strong {
-  display: block;
-  font-size: 1.75rem;
-  font-weight: normal;
-}
-
-.revue-directory span {
-  font-size: 0.95rem;
+.revue-note {
+  max-width: 760px;
+  margin: 0 auto 2.5rem;
+  text-align: center;
   color: var(--paper-dim);
-}
-
-.revue-period-links {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.75rem;
-}
-
-.revue-period-links a {
-  padding: 0.55rem 1rem;
-  border: 1px solid var(--gold);
-  color: var(--paper);
-  text-decoration: none;
-}
-
-.revue-period-links a:hover {
-  background: var(--paper);
-  color: var(--ink);
-}
-
-.revue-period {
-  margin-top: 3rem;
-  scroll-margin-top: 2rem;
-}
-
-.revue-period-heading {
-  align-items: baseline;
-  flex-wrap: wrap;
-  margin-bottom: 1.25rem;
-}
-
-.revue-period-heading h2 {
-  font-family: 'IM Fell English SC', serif;
-  font-size: 1.35rem;
-  font-weight: normal;
-  letter-spacing: 0.06em;
-}
-
-.revue-period-count {
-  color: var(--paper-dim);
-  font-style: italic;
-  font-size: 0.9rem;
 }
 
 .revue-grid {
@@ -140,6 +49,10 @@ nav.archaic a[aria-current="page"] {
 }
 
 .revue-entry-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
   padding-bottom: 1rem;
   border-bottom: 1px solid var(--paper-dim);
   margin-bottom: 1.25rem;
@@ -183,15 +96,9 @@ nav.archaic a[aria-current="page"] {
   line-height: 1.2;
 }
 
-.revue-comment,
-.revue-missing {
+.revue-comment {
   margin-top: 1rem;
   font-size: 1rem;
-}
-
-.revue-missing {
-  font-style: italic;
-  color: var(--ink-soft);
 }
 
 .revue-press {
@@ -199,12 +106,13 @@ nav.archaic a[aria-current="page"] {
   margin-top: 1.5rem;
 }
 
-.revue-press summary {
+.revue-press h4 {
   font-family: 'IM Fell English SC', serif;
   color: var(--red-deep);
   padding: 0.75rem 0;
-  cursor: pointer;
   letter-spacing: 0.08em;
+  font-size: 1rem;
+  font-weight: normal;
 }
 
 .revue-press blockquote {
@@ -231,53 +139,18 @@ nav.archaic a[aria-current="page"] {
   font-style: italic;
 }
 
-.revue-source-note {
-  margin-top: 3rem;
-  padding-top: 1.5rem;
-  border-top: 1px solid var(--gold);
-  color: var(--paper-dim);
-  font-style: italic;
-  font-size: 0.9rem;
-}
-
-.revue-contribute {
-  padding: 4rem 2rem;
-  text-align: center;
-}
-
-.revue-contribute .ornament {
-  margin-bottom: 1.5rem;
-}
-
-.revue-contribute p {
-  max-width: 600px;
-  margin: 1rem auto 1.5rem;
-}
-
-.revue-contribute a {
-  color: var(--red-deep);
-  text-underline-offset: 0.25em;
-}
-
 .revue-page :focus-visible {
   outline: 3px solid var(--gold);
   outline-offset: 4px;
 }
 
 @media (max-width: 680px) {
-  .revue-intro-grid,
   .revue-grid {
     grid-template-columns: 1fr;
   }
 
-  .revue-intro-grid {
-    gap: 1.5rem;
-  }
-
   .revue-hero,
-  .revue-intro,
-  .revue-collection,
-  .revue-contribute {
+  .revue-collection {
     padding-inline: 1.25rem;
   }
 
