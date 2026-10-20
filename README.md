@@ -35,6 +35,9 @@ Last opp alle filene og mappene som statiske filer til Netlify eller Cloudflare 
 
 Revyarkivet er vanlig HTML med revyene sortert fra nyeste til eldste.
 Rediger oppføringene i `revyarkivet.html`.
+Innledningen «Samfunnscabaréer – gründertid» av Rolf Lie Holter ligger i
+`section.revue-history`. Første avsnitt vises alltid, mens resten kan åpnes
+med «Les hele fortellingen». Presseomtalene under revyene vises fortsatt direkte.
 De første 27 oppføringene er overført fra `revyoversikt_1970_1999.xlsx`.
 Til tross for filnavnet inneholder arket **70.–98. Kulturelle år**, ikke kalenderår
 1970–1999. Det er ingen oppføringer for 76. og 77. Kulturelle år i arket.

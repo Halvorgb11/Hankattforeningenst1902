@@ -27,11 +27,64 @@ nav.archaic a[aria-current="page"] {
   color: var(--paper-dim);
 }
 
+.revue-history {
+  max-width: 850px;
+  margin: 0 auto 2.5rem;
+  padding: 0 0 1.5rem;
+  border-bottom: 1px solid var(--gold);
+}
+
+.revue-history h2 {
+  font-weight: normal;
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  line-height: 1.25;
+}
+
+.revue-history-byline {
+  margin: 0.5rem 0 1rem;
+  color: var(--paper-dim);
+  font-style: italic;
+  font-size: 0.95rem;
+}
+
+.revue-history-intro,
+.revue-history-text {
+  max-width: 70ch;
+}
+
+.revue-history-more summary {
+  width: fit-content;
+  margin-top: 0.5rem;
+  padding: 0.65rem 0;
+  color: var(--paper);
+  font-family: 'IM Fell English SC', serif;
+  text-decoration: underline;
+  text-underline-offset: 0.25em;
+  cursor: pointer;
+}
+
+.revue-history-more summary:hover,
+.revue-history-skip:hover {
+  color: var(--gold);
+}
+
+.revue-history-text p {
+  margin: 0.75rem 0 1.25rem;
+}
+
+.revue-history-skip {
+  display: inline-block;
+  padding: 0.5rem 0;
+  color: var(--paper);
+  text-underline-offset: 0.25em;
+}
+
 .revue-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 1.5rem;
   align-items: start;
+  scroll-margin-top: 1.5rem;
 }
 
 .revue-entry {
