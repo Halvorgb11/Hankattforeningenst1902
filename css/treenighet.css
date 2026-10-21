@@ -37,8 +37,8 @@
 }
 
 .trinity-logo-hunkatt { background: #f00; }
+.trinity-member-hankatt .trinity-logo img { transform: scale(1.45); }
 .trinity-logo-pb { background: var(--paper); }
-.trinity-logo-pb img { width: 55%; height: 65%; }
 
 .trinity-member h2 {
   margin: 1.5rem 0 0.75rem;
