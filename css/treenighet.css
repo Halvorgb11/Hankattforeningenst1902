@@ -1,0 +1,64 @@
+.trinity-emblems {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(1.5rem, 4vw, 3rem);
+  max-width: 1000px;
+  margin: 3rem auto 1rem;
+}
+
+.trinity-member {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 0;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--gold);
+}
+
+.trinity-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  aspect-ratio: 1;
+  padding: 1rem;
+  background: #fff;
+  border: 1px solid var(--gold);
+  box-shadow: 0 8px 24px rgb(0 0 0 / 20%);
+}
+
+.trinity-logo img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.trinity-logo-hunkatt { background: #f00; }
+.trinity-logo-pb { background: var(--paper); }
+.trinity-logo-pb img { width: 55%; height: 65%; }
+
+.trinity-member h2 {
+  margin: 1.5rem 0 0.75rem;
+  font-family: 'IM Fell English SC', serif;
+  font-size: clamp(1.2rem, 2vw, 1.5rem);
+  font-weight: normal;
+  line-height: 1.35;
+}
+
+.trinity-member h2 span { display: block; font-size: 0.85em; }
+.trinity-member .trinity-link {
+  margin-top: auto;
+  padding-block: 0.5rem;
+  overflow-wrap: anywhere;
+  max-width: 100%;
+}
+.trinity-member .trinity-link:focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: 4px;
+}
+
+@media (max-width: 700px) {
+  .trinity-emblems { grid-template-columns: 1fr; gap: 2.5rem; max-width: 320px; }
+  .trinity-member h2 { font-size: 1.5rem; }
+}
