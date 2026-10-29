@@ -8,6 +8,32 @@
   --gold: #A88A2E;
 }
 
+.association-essay {
+  max-width: 70ch;
+  margin-inline: auto;
+  font-size: clamp(1.05rem, 2vw, 1.2rem);
+  line-height: 1.85;
+  overflow-wrap: break-word;
+}
+
+.association-essay .essay-header {
+  display: block;
+  text-align: center;
+  border-bottom: 1px solid var(--gold);
+  padding-bottom: 2rem;
+  margin-bottom: 3rem;
+}
+
+.association-essay p { margin-bottom: 1.25em; }
+.association-essay h2 { font-size: clamp(1.8rem, 4vw, 2.5rem); line-height: 1.25; margin: 2.5rem 0 1.5rem; scroll-margin-top: 2rem; }
+.association-essay h3 { font-size: 1.35rem; margin: 2rem 0 0.75rem; }
+.association-essay ul { padding-left: 1.5rem; margin-bottom: 1.5rem; }
+.association-essay .essay-occasion { color: var(--red); font-style: italic; }
+.association-essay .essay-byline { font-family: 'IM Fell English SC', serif; }
+.essay-contents { display: flex; justify-content: center; flex-wrap: wrap; gap: 0.75rem 2rem; }
+.essay-contents a { color: var(--red-deep); text-underline-offset: 0.25em; padding-block: 0.5rem; }
+nav.archaic a[aria-current="page"] { border-bottom-color: var(--red); }
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -16,15 +42,21 @@
 
 html {
   scroll-behavior: smooth;
+  background: var(--ink);
 }
 
 body {
   font-family: 'IM Fell English', Georgia, serif;
   color: var(--ink);
-  background: var(--paper);
+  background: var(--ink);
   line-height: 1.65;
   font-size: 18px;
   overflow-x: hidden;
+}
+
+body > header,
+main {
+  background: var(--paper);
 }
 
 header {
