@@ -864,9 +864,154 @@ footer .stamp {
 }
 
 @media (max-width: 768px) {
-  nav.archaic { gap: 1.2rem; font-size: 12px; }
+  body { overflow-wrap: break-word; }
+
+  .top-ribbon {
+    width: 100%;
+    padding: 0.65rem 1rem;
+    letter-spacing: 0.12em;
+    line-height: 1.7;
+  }
+
+  nav.archaic {
+    gap: 0.15rem 0.75rem;
+    padding: 0.5rem 1rem;
+    font-size: 14px;
+    letter-spacing: 0.06em;
+  }
+
+  nav.archaic a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 44px;
+    padding: 0.5rem 0.35rem;
+    text-align: center;
+    max-width: 100%;
+  }
+
+  nav.archaic a:focus-visible {
+    outline: 2px solid var(--red);
+    outline-offset: 2px;
+  }
+
+  main .hero,
+  main .page-hero {
+    min-height: 0;
+    padding: 2.5rem 1.25rem;
+  }
+
+  .hero > *,
+  .page-hero > * {
+    max-width: 100%;
+    min-width: 0;
+  }
+
+  .page-hero-title {
+    font-size: clamp(1.8rem, 6vw, 2.5rem);
+    padding: 0.65rem 1rem;
+    line-height: 1.25;
+    overflow-wrap: anywhere;
+  }
+
+  .hero p.lead,
+  .page-hero p.lead,
+  .hero-motto {
+    font-size: 1.1rem;
+    padding: 1rem 1.75rem;
+  }
+
+  .hero-attrib,
+  .hero-est,
+  .hero-note {
+    letter-spacing: 0.1em;
+  }
+
+  .hero-logo-row { gap: 1.25rem; }
+  .hero-logo-item {
+    width: clamp(56px, 16vw, 100px);
+    height: auto;
+    aspect-ratio: 1;
+    flex-shrink: 0;
+    border-width: 3px;
+    box-shadow: 0 0 0 6px var(--paper), 0 0 0 7px var(--ink);
+  }
+  .hero-logo-item.center { width: clamp(88px, 26vw, 150px); height: auto; }
+
+  .circus-frame { width: 180px; height: 180px; }
+  .circus-banner {
+    font-size: clamp(1.5rem, 5.8vw, 2.5rem);
+    padding: 0.75rem 1.5rem;
+  }
+
+  section.content,
+  .page-main-section,
+  .hierarchy,
+  .traditions,
+  .archive,
+  .contact,
+  .trinity {
+    padding: 3rem 1.25rem;
+  }
+
+  h2.headline {
+    font-size: clamp(2rem, 7vw, 2.75rem);
+    line-height: 1.15;
+    overflow-wrap: anywhere;
+    hyphens: auto;
+  }
+
+  .ornament {
+    font-size: 1.05rem;
+    letter-spacing: 0.18em;
+    margin-bottom: 2rem;
+  }
+
+  .group-title {
+    font-size: 1.1rem;
+    letter-spacing: 0.1em;
+    line-height: 1.4;
+    margin-bottom: 1.5rem;
+  }
+
+  .group-grid,
+  .group-grid.two,
+  .group-grid.triple,
+  .group-grid.five,
+  .members-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 2rem 1rem;
+  }
+
+  .group-grid.single { grid-template-columns: minmax(0, 1fr); }
+  .member-group { margin-bottom: 2.75rem; }
+  .member-group:last-child { margin-bottom: 0; }
+  .member { min-width: 0; width: 100%; }
+  .member-portrait {
+    width: min(132px, 100%);
+    height: auto;
+    aspect-ratio: 1;
+  }
+  .member-title { font-size: 1rem; line-height: 1.4; }
+  .member-name { font-size: 1rem; line-height: 1.4; margin-top: 0.25rem; }
+
   .about-grid { grid-template-columns: 1fr; gap: 2rem; }
   .hirsch-frame { max-width: 280px; margin: 0 auto; }
+  .text-frame { padding: 1.5rem; }
+  .text-frame h1 { font-size: clamp(1.5rem, 6vw, 2rem); line-height: 1.3; }
+  .h-level { letter-spacing: 0.1em; }
+  .h-level.top { padding: 1rem; font-size: 1.1rem; }
+  .skol-cry { padding: 1.25rem 0.5rem; letter-spacing: 0.15em; }
+  .contact-card { padding: 1.5rem 1rem; margin-top: 2rem; }
+  .contact-value { overflow-wrap: anywhere; }
+  .contact-label { letter-spacing: 0.15em; }
+  .trinity-item { max-width: 100%; }
+  .trinity-link { overflow-wrap: anywhere; padding-block: 0.75rem; }
+  .link-grid { grid-template-columns: repeat(auto-fit, minmax(min(220px, 100%), 1fr)); }
+  .link-card { min-width: 0; padding: 1.5rem; }
+  .link-card h3 { letter-spacing: 0.1em; }
+  .link-card a { padding-block: 0.5rem; }
+  footer { padding: 1.5rem 1.25rem; letter-spacing: 0.1em; }
   .scrapbook { grid-template-columns: 1fr; }
   .scrap-1,
   .scrap-2,
@@ -876,7 +1021,8 @@ footer .stamp {
     transform: none;
     margin-top: 0;
   }
-  .stripes {
+  .hero.stripes,
+  .page-hero.stripes {
     background: repeating-linear-gradient(
       to right,
       var(--red) 0,
@@ -885,4 +1031,18 @@ footer .stamp {
       var(--paper) 64px
     );
   }
+}
+
+@media (max-width: 359px) {
+  .group-grid,
+  .group-grid.two,
+  .group-grid.triple,
+  .group-grid.five,
+  .members-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
 }
