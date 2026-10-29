@@ -30,6 +30,14 @@
 .association-essay ul { padding-left: 1.5rem; margin-bottom: 1.5rem; }
 .association-essay .essay-occasion { color: var(--red); font-style: italic; }
 .association-essay .essay-byline { font-family: 'IM Fell English SC', serif; }
+.text-frame .about-page-title {
+  font-family: 'UnifrakturMaguntia', serif;
+  font-size: clamp(2.2rem, 5vw, 4rem);
+  font-weight: normal;
+  line-height: 1.2;
+  overflow-wrap: break-word;
+}
+.association-essay .essay-header h2 { margin-top: 0; }
 .essay-contents { display: flex; justify-content: center; flex-wrap: wrap; gap: 0.75rem 2rem; }
 .essay-contents a { color: var(--red-deep); text-underline-offset: 0.25em; padding-block: 0.5rem; }
 nav.archaic a[aria-current="page"] { border-bottom-color: var(--red); }
@@ -854,12 +862,13 @@ footer .stamp {
 
 .link-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
   gap: 1.5rem;
   margin-top: 3rem;
 }
 
 .link-card {
+  min-width: 0;
   background: var(--paper);
   border: 1px solid var(--ink);
   padding: 2rem;
@@ -872,7 +881,10 @@ footer .stamp {
 
 .link-card h3 {
   font-family: 'IM Fell English SC', serif;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.06em;
+  line-height: 1.35;
+  overflow-wrap: anywhere;
+  hyphens: auto;
   margin-bottom: 1rem;
 }
 
@@ -885,7 +897,8 @@ footer .stamp {
 .link-card a {
   margin-top: 1.5rem;
   font-family: 'IM Fell English SC', serif;
-  letter-spacing: 0.18em;
+  letter-spacing: 0.06em;
+  overflow-wrap: anywhere;
   color: var(--ink);
   text-decoration: none;
   border-bottom: 1px solid transparent;
@@ -1039,9 +1052,9 @@ footer .stamp {
   .contact-label { letter-spacing: 0.15em; }
   .trinity-item { max-width: 100%; }
   .trinity-link { overflow-wrap: anywhere; padding-block: 0.75rem; }
-  .link-grid { grid-template-columns: repeat(auto-fit, minmax(min(220px, 100%), 1fr)); }
+  .link-grid { grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr)); }
   .link-card { min-width: 0; padding: 1.5rem; }
-  .link-card h3 { letter-spacing: 0.1em; }
+  .link-card h3 { letter-spacing: 0.04em; }
   .link-card a { padding-block: 0.5rem; }
   footer { padding: 1.5rem 1.25rem; letter-spacing: 0.1em; }
   .scrapbook { grid-template-columns: 1fr; }
