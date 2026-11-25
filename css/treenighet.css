@@ -96,27 +96,6 @@
   border-bottom: 1px solid var(--gold);
 }
 
-.relation-photo-asblaestn {
-  background: repeating-linear-gradient(90deg, #b3192c 0 54px, #fff 54px 58px);
-}
-
-.relation-monogram {
-  display: grid;
-  place-items: center;
-  background-color: var(--monogram-background);
-  background-image: repeating-linear-gradient(135deg, transparent 0 12px, rgb(255 255 255 / 5%) 12px 13px);
-  color: var(--paper);
-  font-family: 'IM Fell English SC', serif;
-  font-size: clamp(2.5rem, 7vw, 5rem);
-  letter-spacing: 0.04em;
-  line-height: 1;
-}
-
-.relation-monogram span {
-  padding: 0.2em 0.4em;
-  border-block: 1px solid var(--gold);
-}
-
 .relation-details {
   display: grid;
   grid-template-columns: 4.25rem minmax(0, 1fr);
