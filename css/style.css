@@ -463,7 +463,6 @@ h2.headline {
   position: relative;
 }
 
-.members-section::before,
 .members-section::after {
   content: '';
   position: absolute;
@@ -477,10 +476,6 @@ h2.headline {
     var(--paper) 28px,
     var(--paper) 56px
   );
-}
-
-.members-section::before {
-  top: 0;
 }
 
 .members-section::after {
