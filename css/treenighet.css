@@ -96,12 +96,20 @@
   border-bottom: 1px solid var(--gold);
 }
 
+.relation-photo-asblaestn {
+  background: repeating-linear-gradient(90deg, #b3192c 0 54px, #fff 54px 58px);
+}
+
 .relation-details {
   display: grid;
   grid-template-columns: 4.25rem minmax(0, 1fr);
   align-items: center;
   gap: 1rem;
   padding: 1rem;
+}
+
+.relation-details-without-logo {
+  grid-template-columns: minmax(0, 1fr);
 }
 
 .relation-logo {
