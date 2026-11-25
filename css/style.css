@@ -460,26 +460,6 @@ h2.headline {
 
 .members-section {
   background: var(--paper);
-  position: relative;
-}
-
-.members-section::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  right: 0;
-  height: 12px;
-  background: repeating-linear-gradient(
-    to right,
-    var(--red) 0,
-    var(--red) 28px,
-    var(--paper) 28px,
-    var(--paper) 56px
-  );
-}
-
-.members-section::after {
-  bottom: 0;
 }
 
 .members-grid {
