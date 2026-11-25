@@ -241,6 +241,11 @@ nav.archaic a:hover {
   object-fit: contain;
 }
 
+.circus-frame .circus-emblem {
+  clip-path: circle(35.2% at 52% 50.3%);
+  transform: translate(-2.7%, -0.4%) scale(1.36);
+}
+
 .circus-banner {
   background: var(--ink);
   color: var(--paper);
