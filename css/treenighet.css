@@ -1,3 +1,11 @@
+.trinity-photo {
+  display: block;
+  width: min(100%, 720px);
+  height: auto;
+  margin: 2rem auto 0;
+  border: 1px solid var(--gold);
+}
+
 .trinity-emblems {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
