@@ -89,6 +89,8 @@
 }
 
 .relation-card {
+  display: flex;
+  flex-direction: column;
   min-width: 0;
   background: var(--paper);
   border: 1px solid var(--ink);
@@ -101,7 +103,13 @@
   height: auto;
   aspect-ratio: 3 / 2;
   object-fit: cover;
-  border-bottom: 1px solid var(--gold);
+  margin-top: auto;
+  border-top: 1px solid var(--gold);
+}
+
+.relation-description {
+  margin: 0 1rem 1rem;
+  line-height: 1.5;
 }
 
 .relation-details {
